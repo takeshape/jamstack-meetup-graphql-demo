@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.AppHeader {
+  font-size: calc(10px + 2vmin);
+}
+
+.AppHeader-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.AppHeader-react-logo {
+  height: 200px;
+}
+
+.AppHeader-graphql-logo {
+  padding: 0 57px;
+  height: 175px;
+}
+
+.AppHeader-plus {
+  color: #fff;
+  font-size: 40px;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+.AddMovie {
+  display: flex;
+  width: 600px;
+}
+
+.AddMovie-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 32px;
+  height: 40px;
+}
+
+.AddMovie-submit {
+  padding: 5px;
+}
+
+.Movie {
+  width: 600px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.Movie-info,
+.Movie-poster {
+  margin-left: 20px;
+}
+
+.Movie-info {
+  flex: 1;
+  text-align: left;
+}
+
+.Movie-poster {
+  height: 150px;
+}
+
+.RemoveButton {
+  padding: 5px;
+}
