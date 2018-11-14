@@ -2,7 +2,6 @@ let watchList = [
   {
     movieTitle: 'Top Gun',
     watched: true
-
   },
   {
     movieTitle: 'Big Trouble In Little China',
