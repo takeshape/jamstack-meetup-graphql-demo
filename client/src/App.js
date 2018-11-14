@@ -9,13 +9,6 @@ const TO_WATCH_FRAGMENT = gql`
   fragment MovieInfo on ToWatch {
     watched
     movieTitle
-    movie {
-      title
-      year
-      director
-      poster
-      rating
-    }
   }
 `;
 
@@ -125,23 +118,7 @@ function RemoveButton({title}) {
   );
 }
 
-function Movie({movie, movieTitle, watched}) {
-  if (movie.title) {
-    return (
-      <div className="Movie">
-        <WatchedCheckbox title={movieTitle} watched={watched}/>
-        <img className="Movie-poster" src={movie.poster} alt={`${movie.title} poster`}/>
-        <div className="Movie-info">
-          <h3>{movie.title} - {movie.year}</h3>
-          <p>{movie.director}</p>
-          <p>{movie.actors}</p>
-          <p>IMDB Rating: {movie.rating}/10</p>
-        </div>
-        <RemoveButton title={movieTitle}/>
-      </div>
-    );
-  }
-
+function Movie({movieTitle, watched}) {
   return (
     <div className="Movie">
       <WatchedCheckbox title={movieTitle} watched={watched}/>
