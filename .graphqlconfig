@@ -1,0 +1,14 @@
+{
+  "schemaPath": "schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Default Introspection Endpoint": {
+        "url": "http://localhost:4000/graphql",
+        "introspect": true
+      },
+      "GraphQL Demo Schema": {
+        "url": "http://localhost:4000/graphql"
+      }
+    }
+  }
+}

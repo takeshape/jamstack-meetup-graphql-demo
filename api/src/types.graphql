@@ -1,0 +1,24 @@
+type Movie {
+  title: String
+  rating: Float
+  poster: String
+  actors: String
+  director: String
+  year: String
+}
+
+type ToWatch {
+  movieTitle: String!
+  movie: Movie
+  watched: Boolean!
+}
+
+type Query {
+  getToWatchList: [ToWatch]
+}
+
+type Mutation {
+  addMovieToWatch(title: String!): [ToWatch]
+  removeMovieToWatch(title: String!): [ToWatch]
+  markMovieWatched(title: String! watched: Boolean!): [ToWatch]
+}
