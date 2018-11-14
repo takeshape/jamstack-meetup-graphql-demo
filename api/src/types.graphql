@@ -1,5 +1,15 @@
+type Movie {
+  title: String
+  rating: Float
+  poster: String
+  actors: String
+  director: String
+  year: String
+}
+
 type ToWatch {
   movieTitle: String!
+  movie: Movie
   watched: Boolean!
 }
 
